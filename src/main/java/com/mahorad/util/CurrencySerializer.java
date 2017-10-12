@@ -1,7 +1,6 @@
-package com.mahorad;
+package com.mahorad.util;
 
 import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
 
@@ -15,7 +14,7 @@ public class CurrencySerializer extends JsonSerializer<BigDecimal> {
                 BigDecimal value,
                 JsonGenerator generator,
                 SerializerProvider provider)
-            throws IOException, JsonProcessingException {
+            throws IOException {
 
         final BigDecimal bigDecimal = value.setScale(2, RoundingMode.HALF_UP);
         generator.writeString(bigDecimal.toString());

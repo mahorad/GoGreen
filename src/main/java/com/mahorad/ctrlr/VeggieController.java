@@ -1,5 +1,7 @@
-package com.mahorad;
+package com.mahorad.ctrlr;
 
+import com.mahorad.model.Veggie;
+import com.mahorad.service.VeggieService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,7 +59,7 @@ public class VeggieController {
         final boolean deleted = service.delete(id);
         return deleted
             ? new ResponseEntity<>(NO_CONTENT)
-            : new ResponseEntity<>("could not delete id" + id, NOT_FOUND);
+            : new ResponseEntity<>("could not delete id " + id, NOT_FOUND);
     }
 
     @RequestMapping(value = "/veggies", method = POST)

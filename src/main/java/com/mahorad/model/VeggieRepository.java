@@ -1,4 +1,4 @@
-package com.mahorad;
+package com.mahorad.model;
 
 import org.springframework.data.repository.Repository;
 

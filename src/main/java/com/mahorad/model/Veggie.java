@@ -1,5 +1,7 @@
-package com.mahorad;
+package com.mahorad.model;
 
+import com.mahorad.util.CurrencyDeserializer;
+import com.mahorad.util.CurrencySerializer;
 import org.springframework.data.annotation.Id;
 
 import com.fasterxml.jackson.annotation.JsonProperty;

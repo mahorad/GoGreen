@@ -1,4 +1,6 @@
-package com.mahorad;
+package com.mahorad.service;
+
+import com.mahorad.model.Veggie;
 
 import java.util.List;
 

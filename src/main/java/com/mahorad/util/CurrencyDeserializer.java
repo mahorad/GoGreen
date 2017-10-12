@@ -1,4 +1,4 @@
-package com.mahorad;
+package com.mahorad.util;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -6,7 +6,7 @@ import com.fasterxml.jackson.core.ObjectCodec;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.mahorad.Veggie;
+import com.mahorad.model.Veggie;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -16,7 +16,7 @@ public class CurrencyDeserializer extends JsonDeserializer<Veggie> {
     public Veggie deserialize(
                 JsonParser jsonParser,
                 DeserializationContext deserializationContext)
-            throws IOException, JsonProcessingException {
+            throws IOException {
 
         ObjectCodec codec = jsonParser.getCodec();
         JsonNode node = codec.readTree(jsonParser);

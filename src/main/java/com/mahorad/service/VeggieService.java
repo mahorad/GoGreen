@@ -1,5 +1,7 @@
-package com.mahorad;
+package com.mahorad.service;
 
+import com.mahorad.model.Veggie;
+import com.mahorad.model.VeggieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
