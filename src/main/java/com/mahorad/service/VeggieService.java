@@ -1,7 +1,7 @@
 package com.mahorad.service;
 
 import com.mahorad.model.Veggie;
-import com.mahorad.model.VeggieRepository;
+import com.mahorad.model.IVeggieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,10 +10,10 @@ import java.util.List;
 @Service
 public final class VeggieService implements IVeggieService {
 
-    private final VeggieRepository repository;
+    private final IVeggieRepository repository;
 
     @Autowired
-    public VeggieService(VeggieRepository repository) {
+    public VeggieService(IVeggieRepository repository) {
         this.repository = repository;
     }
 

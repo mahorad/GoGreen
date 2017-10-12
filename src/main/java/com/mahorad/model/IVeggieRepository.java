@@ -4,7 +4,7 @@ import org.springframework.data.repository.Repository;
 
 import java.util.List;
 
-public interface VeggieRepository extends Repository<Veggie, String> {
+public interface IVeggieRepository extends Repository<Veggie, String> {
 
     List<Veggie> findAll();
 
