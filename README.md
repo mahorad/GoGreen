@@ -1,6 +1,15 @@
 # GoGreen
+GoGreen is a small Spring boot REST application with the following abilities:
 
+	- Exposing CRUD service APIs toward internal development.
+	- Exposing CRUD REST APIs toward network clients.
+	- Using MongoDB to provide persistency
 
+### Compile Application:
+From the project root, run the following command.
+```bash
+mvn compile
+```
 
 ### Run Application:
 Goto the root folder of the project use the following mathods in order to run the application.
