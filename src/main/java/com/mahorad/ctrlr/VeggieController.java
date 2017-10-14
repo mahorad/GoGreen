@@ -67,7 +67,7 @@ public class VeggieController {
         log.info(String.format("RECEIVED: POST \"%s\"", "/api/v1/veggies"));
         final Veggie created = service.create(veggie);
         return created != null
-            ? new ResponseEntity<>("", CREATED)
+            ? new ResponseEntity<>(veggie, CREATED)
             : new ResponseEntity<>("could not add", CONFLICT);
     }
 
