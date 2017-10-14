@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GoGreen",
+		"_postman_id": "9f9ba888-b113-57c9-a4e7-85f7b5b6e1cf",
+		"description": "A grocery with basic CRUD operation used for test purposes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"url": "localhost:8080/api/v1/veggies",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "receive all available vegtable items"
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"url": "localhost:8080/api/v1/veggies/4",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "receive vegtable by its ID"
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"url": "localhost:8080/api/v1/veggies/6",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": \"nonsense\",\n        \"name\": \"celery\",\n        \"price\": \"100.00\"\n    }"
+				},
+				"description": "update vegtable information given an ID and its contents"
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"url": "localhost:8080/api/v1/veggies/4",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "delete a vegtable from the repository list; given the veggie ID"
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"url": "localhost:8080/api/v1/veggies/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": \"412\",\n        \"name\": \"zucchini\",\n        \"price\": \"18.25\"\n    }"
+				},
+				"description": "create/add a vegtable item"
+			},
+			"response": []
+		}
+	]
+}
