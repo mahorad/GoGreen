@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public final class VeggieService implements IVeggieService {
+public class VeggieService implements IVeggieService {
 
     private final IVeggieRepository repository;
 
