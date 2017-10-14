@@ -6,6 +6,8 @@ GoGreen is a small Spring boot REST application with the following properties:
 	- Uses MongoDB to provide persistency
 	- Unit tested using JUnit and Mockito
 
+The application assumes that MongoDB is installed and it's daemon is running in the background.
+
 ### Compile Application:
 From the project root, run the following command.
 ```bash
