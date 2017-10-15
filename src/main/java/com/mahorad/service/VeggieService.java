@@ -42,6 +42,7 @@ public class VeggieService implements IVeggieService {
         return repository.save(update);
     }
 
+    @Override
     public boolean delete(String id) {
         if (!exists(id))
             return false;
